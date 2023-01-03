@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    align-items: center;
+}
+
+.btn .btn_in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn .btn_in li {
+    line-height: 39px;
+}
+
+.btn .btn_bottom {
+    border: 1px solid #6a62b7;
+    border-radius: 20px;
+    background-color: #6a62b7;
+    width: 145px;
+    height: 39px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn .btn_bottom:hover {
+    border: 1px solid #6a62b7;
+    background-color: #fff;
+}
+
+.btn .btn_in li:hover {
+    color: #6a62b7;
+}
+
+body {
+    position: relative;
+    font-family: "Noto Sans KR", sans-serif;
+    background-color: gray;
+}
+
+.container {
+    width: 375px;
+    height: 667px;
+    background-color: #fff;
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0;
+    margin: 0 auto;
+}
+.container .input_container {
+    position: relative;
+
+    display: flex;
+    margin: 0 auto;
+}
+
+.container .input_container .top {
+    position: absolute;
+    background-color: #3e2ed4;
+    width: 375px;
+    height: 358px;
+    top: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.container .input_container .main {
+    display: flex;
+}
+
+.main .text_box {
+    color: #2c2c2c;
+    position: absolute;
+    left: 40px;
+    top: 393px;
+}
+
+.main .text_box h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.main .text_box p {
+    font-size: 10px;
+    margin-top: 11px;
+    margin-bottom: 17px;
+}
+
+.main .text_box .btn_bottom {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
