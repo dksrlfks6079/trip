@@ -1,20 +1,20 @@
 .inner {
     position: relative;
     background-color: #d0cbff !important;
-    background-image: url(/images/huji_bg.jpg);
+    background-image: url(../images/huji_bg.jpg);
     background-repeat: no-repeat;
 }
 .inner.montena {
     position: relative;
     background-color: #d0cbff !important;
-    background-image: url(/images/motena_bg.jpg);
+    background-image: url(../images/motena_bg.jpg);
         background-size: cover;
         background-position: center;
 }
 .inner.south {
     position: relative;
     background-color: #d0cbff !important;
-    background-image: url(/images/south_bg.jpg);
+    background-image: url(../images/south_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     

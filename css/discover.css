@@ -70,7 +70,7 @@
     position: relative;
     width: 255px;
     height: 196px;
-    background-image: url(/images/huji_00.jpg);
+    background-image: url(../images/huji_00.jpg);
     border-radius: 15px;
 }
 
@@ -160,13 +160,13 @@ width 157px height 164px 간격20px */
 }
 
 .product_01 .small_box .montena {
-    background-image: url(/images/montena.jpg);
+    background-image: url(../images/montena.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .product_01 .small_box .south {
-    background-image: url(/images/south_moutain.jpg);
+    background-image: url(../images/south_moutain.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

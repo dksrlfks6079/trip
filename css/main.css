@@ -3,7 +3,7 @@
     height: 358px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    background-image: url(/images/winter.jpg);
+    background-image: url(../images/winter.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
