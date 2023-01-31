@@ -7,6 +7,7 @@
         <title>trip</title>
         <link rel="stylesheet" href="../css/main.css" />
         <link rel="stylesheet" href="/css/discover.css" />
+        <link rel="stylesheet" href="/css/common.css" />
     </head>
     <link
         rel="stylesheet"
@@ -14,12 +15,12 @@
     />
     <body>
         <div class="container">
-            <div class="head">
-                <a href="/index.html" class="logo">
-                    <h2>디스커버</h2>
-                </a>
+            <div class="inner">
+                <div class="head">
+                    <a href="/index.html" class="logo">
+                        <h2>디스커버</h2>
+                    </a>
 
-                <div class="top">
                     <ul class="nav">
                         <li><a href="#x">인기</a></li>
                         <li><a href="#x">특집</a></li>
@@ -28,100 +29,97 @@
                         <li><a href="#x">아시아</a></li>
                     </ul>
 
-                    <ul>
-                        <li>
+                    <div class="user">
+                        <div class="photo">
                             <img src="/images/user.png" alt="" />
-                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <ul>
+                        <li class="main_box">
+                            <a href="/pages/huji.html">
+                            <div class="slider_detail">
+                                <h2>후지산</h2>
+                            </div>
+                            <img class="heart" src="/images/heart.png" alt="" />
+
+                            <div class="star">
+                                <img src="/images/star.png" alt="" />
+                                <img src="/images/star.png" alt="" />
+                                <img src="/images/star.png" alt="" />
+                                <img src="/images/star.png" alt="" />
+                                <img src="/images/star.png" alt="" />
+                            </div>
+                            <p class="score">4.9</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="slider">
-                <ul>
-                    <li class="main_box">
-                        <div class="slider_detail">
-                            <h2>북부 산</h2>
-                        </div>
-                        <img class="heart" src="/images/heart.png" alt="" />
 
-                        <div class="star">
-                            <img src="/images/star.png" alt="" />
-                            <img src="/images/star.png" alt="" />
-                            <img src="/images/star.png" alt="" />
-                            <img src="/images/star.png" alt="" />
-                            <img src="/images/star.png" alt="" />
-                        </div>
-                        <p class="score">4.5</p>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="product_01">
-                <div class="name">
-                    <h4>추천 여행</h4>
-                    <p>모두 보기</p>
-                </div>
-
-                <ul class="small_box">
-                    <li>
-                        <div class="detail_box">
-                            <p>그리너,몬타나</p>
-                            <p class="score">4.5</p>
-                        </div>
-
-                        <img class="heart" src="/images/heart.png" alt="" />
-
-                        <div class="star">
-                            <img src="/images/star.png" alt="" />
-                            <img src="/images/star.png" alt="" />
-                            <img src="/images/star.png" alt="" />
-                            <img src="/images/star.png" alt="" />
-                            <img src="/images/star.png" alt="" />
-                        </div>
-                    </li>
-                    <li>
-                        <div class="detail_box">
-                            <p>남부 산</p>
-                            <p class="score">4.5</p>
-                        </div>
-
-                        <img class="heart" src="/images/heart.png" alt="" />
-
-                        <div class="star">
-                            <img src="/images/star.png" alt="" />
-                            <img src="/images/star.png" alt="" />
-                            <img src="/images/star.png" alt="" />
-                            <img src="/images/star.png" alt="" />
-                            <img src="/images/star.png" alt="" />
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="product_02">
                 <div class="product_01">
+                    <div class="name">
+                        <h4>추천 여행</h4>
+                        <p>모두 보기</p>
+                    </div>
+
                     <ul class="small_box">
-                        <li></li>
-                        <li></li>
+                        <li class="montena">
+                            <a href="/pages/motena.html">
+                            <div class="detail_box">
+                                <p>그리너,몬태나</p>
+                                <p class="score">4.9</p>
+                            </div>
+
+                            <img class="heart" src="/images/heart.png" alt="" />
+
+                            <div class="star">
+                                <img src="/images/star.png" alt="" />
+                                <img src="/images/star.png" alt="" />
+                                <img src="/images/star.png" alt="" />
+                                <img src="/images/star.png" alt="" />
+                                <img src="/images/star.png" alt="" />
+                            </div>
+                        </a>
+                        </li>
+                        <li class="south">
+                            <a href="/pages/south.html">
+                            <div class="detail_box">
+                                <p>남부 산</p>
+                                <p class="score">4.9</p>
+                            </div>
+
+                            <img class="heart" src="/images/heart.png" alt="" />
+
+                            <div class="star">
+                                <img src="/images/star.png" alt="" />
+                                <img src="/images/star.png" alt="" />
+                                <img src="/images/star.png" alt="" />
+                                <img src="/images/star.png" alt="" />
+                                <img src="/images/star.png" alt="" />
+                            </div>
+                        </a>
+                        </li>
                     </ul>
                 </div>
-            </div>
 
-            <div class="button">
-                <ul class="btn">
-                    <li>
-                        <a href="#x"><i class="xi-home"></i></a>
-                    </li>
-                    <li>
-                        <a href="#x"><i class="xi-calendar"></i></a>
-                    </li>
-                    <li>
-                        <a href="#x"><i class="xi-search"></i></a>
-                    </li>
-                    <li>
-                        <a href="#x"><i class="xi-user"></i></a>
-                    </li>
-                </ul>
+                <div class="footer">
+                    <ul class="icon">
+                        <li>
+                            <a href="#x"><i class="xi-home"></i></a>
+                        </li>
+                        <li>
+                            <a href="#x"><i class="xi-calendar"></i></a>
+                        </li>
+                        <li>
+                            <a href="#x"><i class="xi-search"></i></a>
+                        </li>
+                        <li>
+                            <a href="#x"><i class="xi-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </body>

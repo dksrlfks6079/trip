@@ -2,36 +2,28 @@
 /* width: 375px;
     height: 667px; */
 
-body {
-    width: 100%;
-    background-color: #f2f2f2;
-    overflow: hidden;
-}
-
 .head {
     position: relative;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
 }
 
-.head .logo {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%);
-}
-.head .logo .h2 {
+.head .logo h2 {
+    text-align: center;
+    font-weight: 400;
     font-size: 22px;
-}
-
-.head .top {
-    display: flex;
+    margin-top: 12px;
 }
 
 .head .nav {
     display: flex;
-    margin: 75px auto;
+    margin: 0 auto;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+.head .nav li:hover {
+    text-decoration: underline;
+    color: #ff626b;
+    transition: all 0.3s;
 }
 
 .head .nav li a {
@@ -39,27 +31,26 @@ body {
     padding: 0 20px;
 }
 
-.head img {
-    position: relative;
-    padding-top: 23px;
-    padding-right: 24px;
-}
-
-.head .user span {
+.head .user {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    content: "";
-    width: 8px;
-    height: 8px;
-    background-color: red;
-    border-radius: 16px;
+    top: 12px;
+    right: 24px;
 }
 
-.container {
-    overflow: hidden;
+.head .user .photo {
     position: relative;
+}
+
+.head .user .photo::after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    background-color: #ff626b;
+
+    border-radius: 9px;
 }
 
 /* head 끝*/
@@ -75,20 +66,18 @@ body {
     margin: 30px;
 }
 
-.slider .slider_box {
-}
 .slider .main_box {
     position: relative;
     width: 255px;
     height: 196px;
-    background-color: #d0cbff;
+    background-image: url(/images/huji_00.jpg);
     border-radius: 15px;
 }
 
 .slider .main_box .slider_detail {
     position: absolute;
     bottom: 0;
-    background-color: #827fa0;
+    background-color: rgba(130, 127, 160, 0.6);
     width: 255px;
     height: 65px;
     border-radius: 15px;
@@ -139,7 +128,7 @@ width 157px height 164px 간격20px */
 .product_01 .name {
     display: flex;
     justify-content: space-between;
-    margin: 11px 30px 17px 30px;
+    padding: 0 20px;
 }
 
 .product_01 .name h4 {
@@ -148,6 +137,13 @@ width 157px height 164px 간격20px */
 
 .product_01 .name p {
     font-size: 10px;
+    transition: all 0.5;
+}
+
+.product_01 .name p:hover {
+    transition: all 0.3s;
+    color: #ff626b;
+    text-decoration: underline;
 }
 
 .product_01 .small_box {
@@ -158,10 +154,22 @@ width 157px height 164px 간격20px */
 
 .product_01 .small_box li {
     position: relative;
-    background-color: #d0cbff;
     width: 157px;
     height: 164px;
     border-radius: 10px;
+}
+
+.product_01 .small_box .montena {
+    background-image: url(/images/montena.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.product_01 .small_box .south {
+    background-image: url(/images/south_moutain.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .product_01 .small_box .detail_box {
@@ -169,7 +177,7 @@ width 157px height 164px 간격20px */
     display: flex;
     width: 157px;
     height: 54px;
-    background-color: #928eb3;
+    background-color: rgba(130, 127, 160, 0.8);
     color: #fff;
     margin-top: 110px;
 }
@@ -207,34 +215,56 @@ width 157px height 164px 간격20px */
 /* 버튼 284*69xp
 보더38 */
 
-.button {
-    position: absolute;
-    bottom: 8px;
-    left: 45px;
+.footer {
+    width: 284px;
+    height: 70px;
+    margin: 0 auto;
+    text-align: center;
     background-color: #fff;
-    margin-bottom: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
     border-radius: 38px;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
-.button .btn {
-    position: relative;
+.icon {
     display: flex;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    line-height: 70px;
 }
 
-.button .btn li {
-    padding: 25px 24px 25px 30px;
+.icon i {
+    position: relative;
+    justify-content: center;
+    font-size: 20px;
+    padding: 20px;
 }
 
-.button .btn a:hover :first-child {
+.icon i::after {
+    position: absolute;
+    content: "";
+    bottom: -11%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 5px;
+}
+
+.icon i:hover::after {
+    width: 22px;
+    border-radius: 22px;
+    box-shadow: 0 0 3px #6a62b7;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: 250ms ease-in-out;
+    background-color: #6a62b7;
+}
+
+.icon i:hover {
     color: #6a62b7;
     transition: all 0.3s;
 }
-
-/* .button .btn li::after {
-    background-color: red;
-    position: absolute;
-    content: "";
-    width: 10%;
-    height: 5px;
-    bottom: 0;
-} */
